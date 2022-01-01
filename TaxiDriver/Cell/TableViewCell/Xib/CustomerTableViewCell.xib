@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomerTableViewCell" rowHeight="72" id="KGk-i7-Jjw" customClass="CustomerTableViewCell" customModule="TaxiDriver" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-m6-Aie">
+                        <rect key="frame" x="20" y="8" width="56" height="56"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_sample" translatesAutoresizingMaskIntoConstraints="NO" id="cRh-Ca-t5g">
+                                <rect key="frame" x="2" y="2" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Kl5-Oo-Azd"/>
+                                    <constraint firstAttribute="height" constant="52" id="bYK-N3-R4Y"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="color-login-background"/>
+                        <constraints>
+                            <constraint firstItem="cRh-Ca-t5g" firstAttribute="centerY" secondItem="yQi-m6-Aie" secondAttribute="centerY" id="IP1-dQ-OFA"/>
+                            <constraint firstAttribute="height" constant="56" id="Uw2-0O-LZh"/>
+                            <constraint firstAttribute="width" constant="56" id="lFY-xe-gck"/>
+                            <constraint firstItem="cRh-Ca-t5g" firstAttribute="centerX" secondItem="yQi-m6-Aie" secondAttribute="centerX" id="sVC-xJ-kfU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H42-Qg-0Gr">
+                        <rect key="frame" x="76" y="8" width="224" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aung Kyaw Mon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJl-TD-odf">
+                                <rect key="frame" x="16" y="8" width="103" height="17.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="14"/>
+                                <color key="textColor" name="colorTextHeader"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+959788528031" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTw-El-h58">
+                                <rect key="frame" x="16" y="33" width="87.5" height="15"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
+                                <color key="textColor" name="colorTextSub"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4R-ff-zla">
+                                <rect key="frame" x="183" y="18" width="41" height="20"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="16"/>
+                                <color key="textColor" name="colorPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FTw-El-h58" secondAttribute="bottom" constant="8" id="2xT-k3-DGE"/>
+                            <constraint firstItem="oJl-TD-odf" firstAttribute="top" secondItem="H42-Qg-0Gr" secondAttribute="top" constant="8" id="87H-JS-lz6"/>
+                            <constraint firstItem="V4R-ff-zla" firstAttribute="centerY" secondItem="H42-Qg-0Gr" secondAttribute="centerY" id="Xty-h2-K3B"/>
+                            <constraint firstItem="oJl-TD-odf" firstAttribute="leading" secondItem="H42-Qg-0Gr" secondAttribute="leading" constant="16" id="bsA-np-7eQ"/>
+                            <constraint firstItem="FTw-El-h58" firstAttribute="leading" secondItem="H42-Qg-0Gr" secondAttribute="leading" constant="16" id="eHV-Dd-f8P"/>
+                            <constraint firstAttribute="trailing" secondItem="V4R-ff-zla" secondAttribute="trailing" id="qHW-WE-SsT"/>
+                            <constraint firstAttribute="height" constant="56" id="xOV-RP-fro"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="H42-Qg-0Gr" secondAttribute="trailing" constant="20" id="4Ms-Yt-tWV"/>
+                    <constraint firstItem="H42-Qg-0Gr" firstAttribute="leading" secondItem="yQi-m6-Aie" secondAttribute="trailing" id="7s3-rB-R9t"/>
+                    <constraint firstItem="yQi-m6-Aie" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Wpp-u1-mLG"/>
+                    <constraint firstItem="H42-Qg-0Gr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="waz-Th-pTH"/>
+                    <constraint firstItem="yQi-m6-Aie" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xsp-MP-otO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cusNameLabel" destination="oJl-TD-odf" id="HvB-bq-iGN"/>
+                <outlet property="cusPhoneLabel" destination="FTw-El-h58" id="M5L-UK-kts"/>
+                <outlet property="distanceLabel" destination="V4R-ff-zla" id="wEc-F2-ei3"/>
+                <outlet property="profileContainerView" destination="yQi-m6-Aie" id="pkl-vg-75O"/>
+                <outlet property="profileImage" destination="cRh-Ca-t5g" id="tlg-Ht-ys8"/>
+            </connections>
+            <point key="canvasLocation" x="73.913043478260875" y="81.026785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_sample" width="509" height="339"/>
+        <namedColor name="color-login-background">
+            <color red="1" green="0.81999999284744263" blue="0.027000000700354576" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorPrimary">
+            <color red="1" green="0.81999999284744263" blue="0.027000000700354576" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorTextHeader">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="colorTextSub">
+            <color red="0.14900000393390656" green="0.14800000190734863" blue="0.15000000596046448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

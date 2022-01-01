@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "login-taxi-driver.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
