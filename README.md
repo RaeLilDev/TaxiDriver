@@ -6,7 +6,7 @@ An iOS app for the Taxi drivers to help them easily find their customer. Its jus
 
 ### Installation Guide
  - After cloning the repository you need to run the following command in terminal (In your project directory). 
- - #### pod install
+    #### pod install
  
  - In the first time run with simulator, to get your location you need to set default location to MyLocation in EditScheme -> Options
  - You can also change default location coordinate in Resources -> MyLocation.gpx file
