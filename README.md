@@ -1,6 +1,5 @@
 # Taxi Driver 
 
-### Taxi Plus iOS app output
+### App Output
 ![alt text](https://www.sharetee.org/RaeDev/mytaxiplusuiboardlightmode.png)
-
 
